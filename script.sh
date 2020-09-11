@@ -1,2 +1,3 @@
 #!/bin/bash
-python manage.py flush --noinput
+heroku run python manage.py flush --noinput
+#curl https://apitmindia.herokuapp.com/tran/latest
