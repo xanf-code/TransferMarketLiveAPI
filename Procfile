@@ -1,2 +1,2 @@
 web: gunicorn djtmarket.wsgi
-worker: ./script.sh
+worker: python script.py
