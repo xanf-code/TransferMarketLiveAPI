@@ -80,11 +80,14 @@ WSGI_APPLICATION = 'djtmarket.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dd75re8gpemlhh',
+        'HOST' : 'ec2-18-210-51-239.compute-1.amazonaws.com',
+        'PORT' : 5432,
+        'USER' : 'dgasqbsxpyknsj',
+        'PASSWORD' : 'b291aec1072c11c216a18636825ae58778688c3d57ee779cd951ddbb9299e6ce'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
