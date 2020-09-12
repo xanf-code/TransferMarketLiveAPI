@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '22x#@v(&lm@d9k8dhmys1tdyx0y41r@x!)gd#1(2%$ua%+hqvs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0','localhost','apitmindia.herokuapp.com','127.0.0.1']
 
@@ -77,7 +77,6 @@ WSGI_APPLICATION = 'djtmarket.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-# mongodb+srv://darshan:LMOB3H8ny2Ieoqa8@mongodjango.xi99v.mongodb.net/TransferAPI?retryWrites=true&w=majority
 
 DATABASES = {
     'default': {
