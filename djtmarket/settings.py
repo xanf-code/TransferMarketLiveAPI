@@ -77,48 +77,48 @@ WSGI_APPLICATION = 'djtmarket.wsgi.application'
 
 # Database
 
+# # DATABASES = {
+# #     'default': {
+# #         'ENGINE': 'djongo',
+# #         'ENFORCE_SCHEMA': True,
+# #         'LOGGING': {
+# #             'version': 1,
+# #             'loggers': {
+# #                 'djongo': {
+# #                     'level': 'DEBUG',
+# #                     'propogate': False,                        
+# #                 }
+# #             },
+# #          },
+# #         'NAME': 'TransferAPI',
+# #         'CLIENT': {
+# #             'host': 'mongodb+srv://darshan:LMOB3H8ny2Ieoqa8@mongodjango.xi99v.mongodb.net/TransferAPI?retryWrites=true&w=majority',
+# #             'port': 27017,
+# #             'username': 'darshan',
+# #             'password': "LMOB3H8ny2Ieoqa8",
+# #             'authSource': 'admin',
+# #             'authMechanism': 'SCRAM-SHA-1'
+# #         }
+# #     }
+# # }
+
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'djongo',
-#         'ENFORCE_SCHEMA': True,
-#         'LOGGING': {
-#             'version': 1,
-#             'loggers': {
-#                 'djongo': {
-#                     'level': 'DEBUG',
-#                     'propogate': False,                        
-#                 }
-#             },
-#          },
-#         'NAME': 'TransferAPI',
-#         'CLIENT': {
-#             'host': 'mongodb+srv://darshan:LMOB3H8ny2Ieoqa8@mongodjango.xi99v.mongodb.net/TransferAPI?retryWrites=true&w=majority',
-#             'port': 27017,
-#             'username': 'darshan',
-#             'password': "LMOB3H8ny2Ieoqa8",
-#             'authSource': 'admin',
-#             'authMechanism': 'SCRAM-SHA-1'
-#         }
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': str(BASE_DIR / "db.sqlite3"),
 #     }
 # }
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR / "db.sqlite3"),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dd75re8gpemlhh',
+        'HOST' : 'ec2-18-210-51-239.compute-1.amazonaws.com',
+        'PORT' : 5432,
+        'USER' : 'dgasqbsxpyknsj',
+        'PASSWORD' : 'b291aec1072c11c216a18636825ae58778688c3d57ee779cd951ddbb9299e6ce'
     }
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dd75re8gpemlhh',
-#         'HOST' : 'ec2-18-210-51-239.compute-1.amazonaws.com',
-#         'PORT' : 5432,
-#         'USER' : 'dgasqbsxpyknsj',
-#         'PASSWORD' : 'b291aec1072c11c216a18636825ae58778688c3d57ee779cd951ddbb9299e6ce'
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
