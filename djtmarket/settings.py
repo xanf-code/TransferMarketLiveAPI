@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '22x#@v(&lm@d9k8dhmys1tdyx0y41r@x!)gd#1(2%$ua%+hqvs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['0.0.0.0','localhost','apitmindia.herokuapp.com','127.0.0.1']
 
@@ -77,13 +77,39 @@ WSGI_APPLICATION = 'djtmarket.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+# mongodb+srv://darshan:LMOB3H8ny2Ieoqa8@mongodjango.xi99v.mongodb.net/TransferAPI?retryWrites=true&w=majority
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'ENFORCE_SCHEMA': True,
+        'LOGGING': {
+            'version': 1,
+            'loggers': {
+                'djongo': {
+                    'level': 'DEBUG',
+                    'propogate': False,                        
+                }
+            },
+         },
+        'NAME': 'TransferAPI',
+        'CLIENT': {
+            'host': 'mongodb+srv://darshan:LMOB3H8ny2Ieoqa8@mongodjango.xi99v.mongodb.net/TransferAPI?retryWrites=true&w=majority',
+            'port': 27017,
+            'username': 'darshan',
+            'password': "LMOB3H8ny2Ieoqa8",
+            'authSource': 'admin',
+            'authMechanism': 'SCRAM-SHA-1'
+        }
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # DATABASES = {
 #     'default': {
