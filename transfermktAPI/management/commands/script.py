@@ -1,3 +1,3 @@
 import subprocess
 
-rc = subprocess.call("./script.sh")
+rc = subprocess.call("script.sh")
