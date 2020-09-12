@@ -1,3 +1,4 @@
 import subprocess
 
-rc = subprocess.call("./script.sh")
+rc = subprocess.run("./script.sh")
+print("Process Completed")
