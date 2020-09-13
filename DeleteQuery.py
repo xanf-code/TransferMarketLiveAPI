@@ -1,4 +1,5 @@
 import psycopg2
+import subprocess
 
 conn = psycopg2.connect(
     database = "dd75re8gpemlhh",
@@ -17,3 +18,6 @@ conn.commit()
 print("QUERY EXECUTED")
 
 conn.close()
+
+rc = subprocess.run("./script.sh")
+print("Process Completed")
