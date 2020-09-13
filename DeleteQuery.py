@@ -10,7 +10,7 @@ conn = psycopg2.connect(
 
 cur = conn.cursor()
 
-cur.execute("SELECT * FROM transfermktAPI_transfer")
+cur.execute('DELETE FROM "transfermktAPI_transfer" where id =2')
 
 conn.commit()
 
