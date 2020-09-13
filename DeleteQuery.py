@@ -10,7 +10,7 @@ conn = psycopg2.connect(
 
 cur = conn.cursor()
 
-cur.execute('DELETE FROM "transfermktAPI_transfer" where id =2')
+cur.execute('TRUNCATE TABLE "transfermktAPI_transfer"')
 
 conn.commit()
 
