@@ -20,4 +20,3 @@ print("QUERY EXECUTED")
 conn.close()
 
 rc = subprocess.run("./script.sh")
-print("Process Completed")
