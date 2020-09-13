@@ -51,6 +51,6 @@ def latest(request):
             transfer.date = date
 
             transfer.save()
-        return HttpResponse("Data Fetched Proceed to https://apitmindia.herokuapp.com/tran/latest")
+        return HttpResponse("Data Fetched Proceed to https://apitmindia.herokuapp.com/tran/transfers/")
     except Exception as e:
         return HttpResponse(f"Failed{e}")    
