@@ -10,9 +10,9 @@ conn = psycopg2.connect(
 
 cur = conn.cursor()
 
-cur.execute("DELETE from transfermktAPI_transfer where id =1")
+cur.execute("DELETE FROM 'transfermktAPI_transfer' where id =2")
 
-conn.comit()
+conn.commit()
 
 print("QUERY EXECUTED")
 
