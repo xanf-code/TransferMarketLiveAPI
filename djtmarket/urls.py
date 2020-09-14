@@ -21,5 +21,5 @@ from transfermktAPI import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('tran/', include(urls)),
-    path('home/',TemplateView.as_view(template_name= 'index.html')),
+    path('',TemplateView.as_view(template_name= 'index.html')),
 ]
